@@ -65,11 +65,11 @@ pip install -r requirements.txt
 pip3 install -r requirements.txt
 ```
 
-- Collect of Genarate Some txt files Containing With Password (For Linux User [read-this](https://www.geeksforgeeks.org/kali-linux-crunch-utility/) to genarate Password Files)
+- Collect or Generate Some txt files Containing With Password (For Linux Users [read-this](https://www.geeksforgeeks.org/kali-linux-crunch-utility/) to generate Password Files)
 
-** You Would eed more than one password files,This Brute Force Support Concurrency so due to this it's able try passwords from differnt files same time until it's get the correct password or fineshes all passwords.
+** You Would need more than one password file, This Brute Force supports concurrency so due to this it's able to try passwords from different files same time until it get the correct password or fineshes all passwords.
 
-- Run The Python code with '-th' argument and write how much workers you want (it't recommend to keep it equal with available threads in your system) and The more workers you will choose the more passwords files you need.
+- Run The Python code with '-th' argument and write how much workers you want (it's recommended to keep it equal with available threads in your system) and The more workers you will choose the more password files you need.
 
 ```bash
 python Mysql.py -th <numbers of workers>
