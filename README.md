@@ -29,6 +29,11 @@ If you have any questions or concerns regarding the contents of this repository,
 
 ** IF you have linux and want to genarate Passowrd files [read-this](https://www.geeksforgeeks.org/kali-linux-crunch-utility/)
 
+## Supported Database
+- MySQL
+- PostgreSQL
+- (coming Soon.....)
+
 ## Get Started
 
 Now we will see how can we brute force a database with the help of this repo (If You Don't Have Permission then you can try it on your own database of your local system)
@@ -69,13 +74,23 @@ pip3 install -r requirements.txt
 
 ** You Would need more than one password file, This Brute Force supports concurrency so due to this it's able to try passwords from different files same time until it get the correct password or fineshes all passwords.
 
-- Run The Python code with '-th' argument and write how much workers you want (it's recommended to keep it equal with available threads in your system) and The more workers you will choose the more password files you need.
+- Run The Python code with '-th' argument and write how much workers you want (it's recommended to keep it equal with available threads in your system) and The more workers you will choose the more password files you need. Then Use '-db' and enter the database name , currently its support only two (mysql,postgres). And Finaly Press Enter To start.
+
+syntax:
 
 ```bash
-python Mysql.py -th <numbers of workers>
+python main.py -th <numbers of workers> -db <database type>
     or,
-python3 Mysql.py -th <numbers of workers>
+python3 main.py -th <numbers of workers> -db <database type>
 ```
+example:
+
+```bash
+python main.py -th 2 -db postgres
+    or,
+python3 main.py -th 2 -db postgres
+```
+
 - After Runing The Code it will Create a Folder called 'All_Pass' you need to put all password files there (ex: in my case I chosen 2 threads to I have to put 2 passwords files there and then press enter in the terminal (where the code is running) to continue the process
 
 ** That's All If The Correct Password is in any password file it will inform you.
