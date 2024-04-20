@@ -91,6 +91,6 @@ python main.py -th 2 -db postgres
 python3 main.py -th 2 -db postgres
 ```
 
-- After Runing The Code it will Create a Folder called 'All_Pass' you need to put all password files there (ex: in my case I chosen 2 threads to I have to put 2 passwords files there and then press enter in the terminal (where the code is running) to continue the process
+- After Runing The Code it will Create a Folder called 'All_Pass' you need to put all password files there (ex: in my case I chosen 2 threads to I have to put 2 passwords files there and then press enter in the terminal (where the code is running) to continue the process and then it will ask the host name, port of the db and finaly user name after providing all the informations it will start working.
 
 ** That's All If The Correct Password is in any password file it will inform you.
